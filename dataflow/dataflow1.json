@@ -1,0 +1,45 @@
+{
+	"name": "dataflow1",
+	"properties": {
+		"folder": {
+			"name": "folder1"
+		},
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "manas_csv_blobstorage",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "manas_csv_blobstorage",
+						"type": "DatasetReference"
+					},
+					"name": "dataflowsink1"
+				}
+			],
+			"transformations": [
+				{
+					"name": "nationality"
+				}
+			],
+			"scriptLines": [
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false,",
+				"     partitionBy('hash', 1)) ~> source1",
+				"source1 filter(\"Nationality\" == \"American\") ~> nationality",
+				"nationality sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> dataflowsink1"
+			]
+		}
+	}
+}

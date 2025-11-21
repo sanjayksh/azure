@@ -7,13 +7,16 @@
 		},
 		"parameters": {
 			"Container": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "data2"
 			},
 			"Directory": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "target"
 			},
 			"File": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "AmericanArtists.csv"
 			}
 		},
 		"annotations": [],
