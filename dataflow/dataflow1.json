@@ -15,15 +15,7 @@
 					"name": "source1"
 				}
 			],
-			"sinks": [
-				{
-					"dataset": {
-						"referenceName": "manas_csv_blobstorage",
-						"type": "DatasetReference"
-					},
-					"name": "dataflowsink1"
-				}
-			],
+			"sinks": [],
 			"transformations": [
 				{
 					"name": "nationality"
@@ -34,11 +26,7 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false,",
 				"     partitionBy('hash', 1)) ~> source1",
-				"source1 filter(\"Nationality\" == \"American\") ~> nationality",
-				"nationality sink(allowSchemaDrift: true,",
-				"     validateSchema: false,",
-				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> dataflowsink1"
+				"source1 filter(\"Nationality\" == \"American\") ~> nationality"
 			]
 		}
 	}
