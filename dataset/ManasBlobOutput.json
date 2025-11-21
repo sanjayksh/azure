@@ -7,13 +7,16 @@
 		},
 		"parameters": {
 			"Container": {
-				"type": "String"
+				"type": "String",
+				"defaultValue": "Data2"
 			},
 			"Directory": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "."
 			},
 			"File": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "."
 			}
 		},
 		"annotations": [],
