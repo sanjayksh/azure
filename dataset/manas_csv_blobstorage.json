@@ -16,7 +16,7 @@
 			},
 			"File": {
 				"type": "string",
-				"defaultValue": "AmericanArtists.csv"
+				"defaultValue": "Artists.csv"
 			}
 		},
 		"annotations": [],
