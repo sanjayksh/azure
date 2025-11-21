@@ -8,15 +8,15 @@
 		"parameters": {
 			"Container": {
 				"type": "string",
-				"defaultValue": "data2"
+				"defaultValue": "data1"
 			},
 			"Directory": {
 				"type": "string",
-				"defaultValue": "."
+				"defaultValue": "source"
 			},
 			"File": {
 				"type": "string",
-				"defaultValue": "AmericanArtists.csv"
+				"defaultValue": "Artists.csv"
 			}
 		},
 		"annotations": [],
