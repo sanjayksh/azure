@@ -8,7 +8,7 @@
 		"parameters": {
 			"Container": {
 				"type": "String",
-				"defaultValue": "Data2"
+				"defaultValue": "data2"
 			},
 			"Directory": {
 				"type": "string",
