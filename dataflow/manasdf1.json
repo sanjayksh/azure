@@ -15,7 +15,7 @@
 			"sinks": [
 				{
 					"dataset": {
-						"referenceName": "ManasBlobOutput",
+						"referenceName": "manas_csv_blobstorage",
 						"type": "DatasetReference"
 					},
 					"name": "sink1"
