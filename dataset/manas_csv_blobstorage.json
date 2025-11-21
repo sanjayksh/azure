@@ -12,11 +12,11 @@
 			},
 			"Directory": {
 				"type": "string",
-				"defaultValue": "."
+				"defaultValue": "source"
 			},
 			"File": {
 				"type": "string",
-				"defaultValue": "."
+				"defaultValue": "Artista.csv"
 			}
 		},
 		"annotations": [],
