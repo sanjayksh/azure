@@ -12,7 +12,7 @@
 			},
 			"Directory": {
 				"type": "string",
-				"defaultValue": "target"
+				"defaultValue": "."
 			},
 			"File": {
 				"type": "string",
